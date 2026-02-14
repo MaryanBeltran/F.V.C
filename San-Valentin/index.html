@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia ❤️</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== INICIO ===== -->
+    <section id="inicio" class="activa">
+        <h1>❤️ Nuestra Historia de amor ❤️</h1>
+        <p>Una historia que nació en 2018… ❤️y sigue escribiéndose.</p>
+        <button onclick="ir('cap1')">Empezar</button>
+    </section>
+
+    <!-- ===== CAPÍTULO 1 ===== -->
+    <section id="cap1">
+        <h2>Capítulo 1</h2>
+        <h3>Donde todo comenzó</h3>
+        <p>✨ Todo empezo en agosto, en el momento en que nos presentaron ese dia debo de confesar
+            que me enamore de tu carisma, aunque si por estar siempre con tu amigo de ese tiempo
+            pensaba que eras ya sabes 😂, desde ese dia quede flechada con tu mirada, esas hermosas pestañas que tienes,
+            esos ojos color cafes oscuros, ese cabello entre ondulado, sin imaginarme que ese dia marcaria mi vida,
+            porque ese
+            conoci al amor de mi vida (osea tu precioso), mantuvimos amistad durante un mes, durante ese tiempo
+            me todo la dicha de estar en tu primer cumpleaños aunque siendo amigos pero nunca olvidare que cuando supe
+            que seria tu cumpleaños ese dia compre esa espuma jaja confieso que te estaba espiando para ver cuando
+            pasaras por ese pasillo donde
+            te felcicite y cuando vi que ibas a pasar sali corriendo porque queria felicitarte pero hacerte al mismo
+            tiempo esa travesura,
+            en ese tiempo no teniamos mucha comunicacion ya que, yo no tenia un telefono y solo en las noches me
+            conectaba a mi facebook
+            recuerdo que el 20 de septiembre del 2018 me mandaste un msj en messenger diciendo que si queria ser tu
+            novia y yo
+            te dije que queria que me lo pidieras en persona, al siguiente dia llegaste acompañado de tu amigo a darme
+            un corazon de papel, pero
+            tenias mucho nervios eso si no lo olvido porque tu carita bien nerviosa y tu dudoso en darlo y lo metiste en
+            mi
+            mochila, entre corriendo a mi salon cuando lei lo que decia: "¿Quieres ser mi novia?" enserio que no evite
+            andar a las risas mega feliz y enamorada de ver ese corazon, tu me preguntaste por msj
+            entonces que dices? y yo te dije para hacerla de emocion que lo diria a la salida que nos miraranos en el
+            pasillo de siempre
+            en cuanto sali fui corriendo alcanzarte y abrazandote te dije si quiero yo mega emocionada, asi fue como
+            empezo
+            nuestra historia de amor en aquel dia el 21 de septiembre del 2018 lleno de nervios pero siendo los mas
+            felices,
+            TE AMOOOOOOOOO MI NIÑO HERMOSO❤️😍 y aunque aquel primer día terminó con risas y nervios, nuestro viaje
+            apenas comenzaba…
+            Lo que vendría después cambiaría nuestras vidas para siempre.
+            ✨</p>
+        <div class="botones">
+            <button onclick="ir('inicio')">Regresar</button>
+            <button onclick="ir('cap2')">Siguiente</button>
+        </div>
+    </section>
+
+    <!-- ===== CAPÍTULO 2 ===== -->
+    <section id="cap2">
+        <h2>Capítulo 2</h2>
+
+        <p>✨ Después de aquel primer día tan especial, nuestros momentos juntos empezaron a llenarse de risas y detalles
+            que jamás olvidaré.
+            En diciembre del 2018 disfrutamos de la posada de la escuela, aunque ni Navidad ni Año Nuevo pudimos
+            celebrarlo a lo grande porque mi mamá aún no sabía de nuestro noviazgo.
+            Al llegar 2019, comenzamos a celebrar fechas especiales juntos. Recuerdo San Valentín con nuestras playeras
+            de cochinitos,
+            y cómo me regalaste ese pequeño corazón que se abría y tenía nuestras fotos; la pasamos genial en la
+            escuela, entre risas y miradas cómplices.
+            Mi primer cumpleaños juntos, el 27 de junio, fue inolvidable: viniste a mi casa y tuve un pastel de
+            puerquito,
+            porque desde San Valentín había empezado a amar los cochinitos, ¡y lo nuestro era pura ternura! Y claro,
+            cuando llegó tu cumpleaños, me aseguré de
+            hacerte una sorpresa en la escuela con globos que decían “Feliz cumpleaños”, para verte sonreír como solo tú
+            sabes. ✨</p>
+        <h3>Continuará…</h3>
+        <div class="botones">
+            <button onclick="ir('cap1')">Anterior</button>
+            <button onclick="irMinijuego()">Ir al minijuego 🎮</button>
+        </div>
+    </section>
+
+    <!-- ===== MINIJUEGO ===== -->
+    <section id="minijuego">
+        <h2>🎮 Atrapa los corazones amor</h2>
+        <p>Recuerdos: <span id="puntos">0</span> / 10</p>
+
+        <div id="zona-juego"></div>
+
+        <div class="botones">
+            <button onclick="volverCap2()">Capítulo anterior</button>
+            <button id="btnContinuar" onclick="continuarHistoria()" style="display:none">
+                Continuar historia ❤️
+            </button>
+        </div>
+
+        <audio id="musica" preload="auto" loop>
+            <source src="love.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <!-- ===== CAPÍTULO 3 ===== -->
+    <section id="cap3">
+        <h2>Capítulo 3</h2>
+        <h3>Amar en tiempos difíciles</h3>
+        <p>✨ Como toda historia real, la nuestra no fue perfecta. También llegaron las primeras discusiones, los
+            momentos duros y las pruebas que dolían más de lo que imaginábamos.
+            Hubo un tiempo en el que mi mamá no aceptaba nuestra relación y tuvimos que vivir nuestro amor a escondidas,
+            cuidando cada mensaje, cada encuentro, cada mirada, como si amar fuera un secreto prohibido.
+
+            Yo también cargaba mis propios miedos. Los celos, las dudas, ese nudo en el pecho al verte en ciertas
+            situaciones y pensar que, por no vivir en el mismo lugar, alguien más podría ocupar mi lugar.
+            Vivíamos a media hora de distancia, pero esa distancia a veces se sentía como un mundo entero, sobre todo
+            porque llegar hasta donde yo vivía siempre fue complicado; los taxis, los tiempos, todo parecía ponerse en
+            contra.
+
+            Y entonces llegó la pandemia… y con ella, una prueba aún más difícil. Pasamos casi un año sin vernos. Un año
+            entero de llamadas, mensajes, desvelos y lágrimas silenciosas.
+            Hubo una vez que logramos vernos, aunque fuera a escondidas, y ese momento, tan breve y tan intenso, me
+            recordó que valía la pena resistir.
+
+            Todo era complicado, todo parecía empujarnos a rendirnos… pero nunca lo hicimos. Porque, a pesar de todo,
+            jamás dejé de amarte.
+            Al contrario, mi amor creció, se hizo más fuerte, más profundo, más real. Y entendí que cuando el amor es
+            verdadero, ni la distancia, ni el miedo, ni el mundo entero pueden apagarlo. ✨</p>
+        <div class="botones">
+            <button onclick="ir('cap2')">Regresar</button>
+            <button onclick="ir('cap4')">Continuar</button>
+        </div>
+    </section>
+
+    <!-- ===== CAPÍTULO 4 ===== -->
+    <section id="cap4">
+        <h2>Capítulo 4</h2>
+        <h3>Volver a encontrarnos</h3>
+        <p>✨ Después de más de dos años separados, la vida volvió a cruzar nuestros caminos. No fue como al principio,
+            ya no había nervios adolescentes ni promesas impulsivas, había recuerdos, heridas sanando y muchas preguntas
+            sin decir.
+            Volvimos siendo personas distintas, con más experiencias, más miedos… pero también con un amor que,
+            sorprendentemente, nunca se había ido del todo.
+
+            El reencuentro no fue inmediato ni perfecto. Tuvimos que aprender a conocernos otra vez, a hablarnos con
+            cuidado, a escuchar sin juzgar.
+            Cada conversación era un paso, cada gesto una prueba de que esta vez queríamos hacerlo mejor.
+            Ya no se trataba solo de sentir, sino de entender, de respetar y de elegir conscientemente quedarnos.
+
+            Descubrimos que el tiempo no nos había separado, nos había preparado.
+            Que todo lo vivido antes nos había enseñado lo que no queríamos repetir y lo que sí estábamos dispuestos a
+            cuidar. Volver no fue retroceder,
+            fue comenzar desde un lugar más maduro, más sincero y más fuerte.
+
+            Y así, sin prisas pero con el corazón firme, nos dimos cuenta de algo hermoso: que aun después de tanto
+            tiempo,
+            el amor seguía ahí, esperando el momento correcto para florecer otra vez. ✨</p>
+        <div class="botones">
+            <button onclick="ir('cap3')">Regresar</button>
+            <button onclick="ir('cap5')">Continuar</button>
+        </div>
+    </section>
+
+    <!-- ===== CAPÍTULO 5 ===== -->
+    <section id="cap5">
+        <h2>Capítulo 5</h2>
+        <h3>Elegirnos todos los días</h3>
+        <p>✨ Después de volver a encontrarnos, entendimos que el amor no era solo un sentimiento mágico, sino también
+            una decisión diaria.
+            Cada mensaje, cada abrazo, cada “buenos días” era una forma de decirnos: “te elijo”, y eso nos hacía sentir
+            más cerca que nunca.
+
+            Aprendimos a celebrar lo cotidiano, cada día nos demostraba que amar también es cuidar, respetar los
+            espacios del otro y ser sinceros en todo momento.
+            Descubrimos que las discusiones ya no eran para lastimarnos, sino para crecer juntos y fortalecer nuestra
+            historia.
+
+            Elegirnos no siempre fue fácil, pero cada decisión nos recordaba que este amor era diferente: consciente,
+            fuerte y nuestro. ✨</p>
+        <div class="botones">
+            <button onclick="ir('cap4')">Regresar</button>
+            <button onclick="ir('cap6')">Continuar</button>
+        </div>
+    </section>
+
+    <!-- ===== CAPÍTULO 6 ===== -->
+    <section id="cap6">
+        <h2>Capítulo 6</h2>
+        <h3>Un amor que sigue escribiéndose</h3>
+        <p>✨Llegar a este capítulo de nuestra historia me hace sentir que cada instante vivido valió la pena.
+            Después de tantos años, de risas, lágrimas, dificultades y reencuentros, hemos aprendido que el amor
+            verdadero no es solo un sentimiento pasajero,
+            sino un compromiso silencioso que se fortalece con cada mirada, cada palabra y cada gesto.
+
+            Aunque la distancia siempre fue un desafío, nunca dejamos que se interpusiera entre nosotros.
+            Cada llamada, cada mensaje, cada video compartido, fueron puentes que nos mantuvieron cerca, aun cuando
+            estábamos a media hora de distancia
+            y la vida parecía jugar en nuestra contra con taxis complicados y horarios difíciles.
+            Aprendimos a amarnos incluso sin poder abrazarnos todos los días, y a encontrar la felicidad en los pequeños
+            momentos que podíamos compartir.
+            Recuerdo aquel momento tan especial, cuando me diste aquel anillo de promesa. Fue un símbolo de tu cariño y
+            dedicación,
+            y aunque en ese momento no estábamos oficialmente juntos, tus ojos y tu corazón me hicieron sentir que ya
+            había un pacto entre nosotros:
+            un juramento de que siempre nos cuidaríamos y nos elegiríamos, pase lo que pase. Ese detalle, tan pequeño y
+            a la vez tan gigante,
+            siempre estará grabado en mi memoria como uno de los momentos más puros y tiernos de nuestra historia.
+
+            Cada día juntos ha sido un aprendizaje: descubrir que amar también es esperar, apoyar los sueños del otro y
+            celebrar los logros compartidos.
+            Hemos aprendido que los errores no nos separan, sino que nos enseñan a ser más pacientes y más comprensivos.
+            Que los silencios no duelen cuando se llenan de confianza y de respeto.
+
+            Y hoy, mientras miro hacia atrás y veo todo lo que hemos vivido, siento que este amor sigue creciendo,
+            como si cada recuerdo y cada detalle fueran ladrillos que construyen nuestro propio universo. Los momentos
+            felices, los retos, las travesuras,
+            las sorpresas, los abrazos en la oscuridad y las risas interminables, todos se mezclan para formar la
+            historia más hermosa que jamás podría imaginar.
+
+            ✨ Aunque el tiempo pase, aunque la distancia insista en separarnos y las circunstancias cambien, sé que
+            nuestro amor seguirá escribiéndose.
+            Porque cada día que despertamos, cada “te amo” dicho con el corazón, es una nueva línea en nuestra historia,
+            y yo no cambiaría ni un solo capítulo,
+            ni un solo instante, porque todo nos ha llevado hasta aquí… y hasta donde queramos llegar, siempre de la
+            mano.🥹❤️ ✨💖</p>
+        <div class="botones">
+            <button onclick="ir('cap5')">Regresar</button>
+            <button onclick="ir('album')">Continuar</button>
+        </div>
+    </section>
+
+    <!-- ===== ÁLBUM ===== -->
+<section id="album">
+  <h2>📸 Nuestro Álbum</h2>
+  <p>Recuerdos especiales que guardamos juntos, toca cada foto mi amor💖</p>
+
+  <div class="mosaico">
+    <!--Primer foto-->
+    <div class="foto" onclick="abrirFoto('primer-foto.jpg', 'Nuestra primer foto juntos, quien diria que te volverias el amor de mi vida🥰')">
+      <img src="primer-foto.jpg" alt="Recuerdo 1">
+   
+    </div>
+
+    <!--segunda foto-->
+<div class="foto" onclick="abrirFoto('foto-novios.jpg', 'La primer foto que nos tomaron yo bien chiveada amor❤️')">
+      <img src="foto-novios.jpg" alt="Recuerdo 2 ">
+   
+</div>
+      <!--3-->
+
+      <div class="foto" onclick="abrirFoto('cochinitos.jpg', 'Nuestro primer san valentin, los cochinitos se volvieron nuestro sello🥰')">
+      <img src="cochinitos.jpg" alt="Recuerdo 3 ">
+      </div>
+   <!--4-->
+
+      <div class="foto" onclick="abrirFoto('cumple.jpg', 'A pesar de que no podria estar el mero dia de tu cumpleaños quise hacerte tu sorpresa amor, aun recuerdo como me basilaron por estar en el salon inflando los globos 🤭')">
+      <img src="cumple.jpg" alt="Recuerdo 4 ">
+</div>
+      <!--5-->
+    
+      <div class="foto" onclick="abrirFoto('cumple-mio.jpg', 'Mi primer cumpleaños junto al amor de mi vida🥰')">
+      <img src="cumple-mio.jpg" alt="Recuerdo 5 ">
+</div>
+      <!--6-->
+
+
+      <div class="foto" onclick="abrirFoto('dia-de-columpios.jpg', 'Las ganas que tenia siempre de pasar a los columpios contigo aunque salgo chistosa en esta foto amor🤭')">
+      <img src="dia-de-columpios.jpg" alt="Recuerdo 6">
+</div>
+   <!--7-->
+   
+    <div class="foto" onclick="abrirFoto('favorita.jpg', 'Mi foto favorita, Me encanta😍😍😍')">
+      <img src="favorita.jpg" alt="Recuerdo 7 ">
+</div>
+      <!--8-->
+
+       <div class="foto" onclick="abrirFoto('besito.jpg', 'En la escalera del amor, el lugar donde la pasamos muchas veces 🥰')">
+      <img src="besito.jpg" alt="Recuerdo 8 ">
+</div>
+         <!--9-->
+
+<div class="foto" onclick="abrirFoto('pilonche.jpg', ' Confieso que ese dia me senti tu niña consentida, me encantaba cuando me cargabas mi amor😍')">
+      <img src="pilonche.jpg" alt="Recuerdo 9 ">
+</div>
+            <!--10-->
+<div class="foto" onclick="abrirFoto('peli.jpg', ' A media peli y mi amor maquillandome que servicio tan eficiente amor⭐⭐⭐⭐⭐🤭')">
+      <img src="peli.jpg" alt="Recuerdo 10 ">
+</div>
+           <!--11-->
+  <div class="foto" onclick="abrirFoto('collage.jpg', 'Muchas fotitos juntos💕')">
+      <img src="collage.jpg" alt="Recuerdo 11  ">
+
+      </div>
+             <!--12-->
+
+<div class="foto" onclick="abrirFoto('segura.jpg', 'Amaba estar asi tan cerquita de ti😭😍')">
+      <img src="segura.jpg" alt="Recuerdo 12 ">
+
+      </div>
+            <!--13-->
+<div class="foto" onclick="abrirFoto('dia-estudiante.jpg', 'Este dia fue en el dia del estudiante, esa foto recuerdo que ni cuenta me di que la tomaron pero me encanto🥰')">
+      <img src="dia-estudiante.jpg" alt="Recuerdo 13 ">
+      </div>
+
+             <!--14-->
+<div class="foto" onclick="abrirFoto('taxi.jpg', ' Me encanto cada dia que me acompañaste a esperar taxi y nos poniamos a chismear, a los besos y aun por mas disgutados, jamas me dejaste ir a los taxis sola siempre me acompañaste, Te amoooo😍')">
+      <img src="taxi.jpg" alt="Recuerdo 14 ">
+      </div>
+
+
+
+      <div class="foto" onclick="abrirFoto('posada.jpg', 'Nuestra posada en la escuela, en donde trataste de enseñarme a bailar y yo senti que fui pesima aprendiendo JAJA pero me diverti mucho🥰')">
+      <img src="posada.jpg" alt="Recuerdo 15 ">
+</div>
+
+      <div class="foto" onclick="abrirFoto('beca.jpg', 'Amo sentirte en mis brazos amor😭💕')">
+      <img src="beca.jpg" alt="Recuerdo 16 ">
+</div>
+
+
+      <div class="foto" onclick="abrirFoto('sorpresa.jpg', 'Valoro cada momento contigo mi vida😍😍')">
+      <img src="sorpresa.jpg" alt="Recuerdo 17 ">
+    </div>
+
+ <div class="foto" onclick="abrirFoto('cumple-cuato.jpg', 'Viajaste tantas horas para darme esta sorpresa. Te amo mi corazon🥰🥰')">
+      <img src="cumple-cuato.jpg" alt="Recuerdo 18 ">
+ </div>
+
+       <div class="foto" onclick="abrirFoto('escondidas.jpg', 'Nosotros viendonos a escondidas pero ame tenerte conmigo ese dia y me rei mucho🤭🤭')">
+      <img src="escondidas.jpg" alt="Recuerdo 19 ">
+    </div>
+
+
+
+       <div class="foto" onclick="abrirFoto('tec.jpg', 'Empezamos a irnos juntos a la uni yeii😍🥰')">
+      <img src="tec.jpg" alt="Recuerdo 20 ">
+    </div>
+
+
+       <div class="foto" onclick="abrirFoto('nice.jpg', 'No puede faltar el dia en que por primera vez me proponias casarnos a futuro, con esa ruedita de cheeto y tu: amor te quieres casar conmigo, de verdad ese dia me sorprendiste demasiado😭😭 y yo comiendome mi cheeto de anillo y tu: se comio el anillo jaja ameeee ese dia jamas lo olvidare 😭🥰🥰')">
+      <img src="nice.jpg" alt="Recuerdo 21">
+    </div>
+
+
+       <div class="foto" onclick="abrirFoto('feli.png', 'Años mas tarde cumpliendo la promesa en que cambiarias aquel cheeto en mi anillo de promesa, aunque para nosotros era mas que eso🥰🥰')">
+      <img src="feli.png" alt="Recuerdo 22 ">
+    </div>
+
+
+<div class="foto" onclick="abrirFoto('propuesta.png','Bien nervioso diciendome pero llore 😭😭')">
+    <img src="propuesta.png" alt="Recuerdo 23">
+</div>
+
+
+<div class="foto" onclick="abrirFoto('anillo.png','Aqui donde te volvi a ver arrodillado pidiendome ser tu esposa amee🥰🥰')">
+    <img src="anillo.png" alt="Recuerdo 24">
+</div>
+
+
+<div class="foto" onclick="abrirFoto('amor.jpg','Al fin teniamos los anillos en nuestras manos yeii😍😍😍')">
+    <img src="amor.jpg" alt="Recuerdo 25">
+</div>
+
+
+
+<div class="foto" onclick="abrirFoto('fecha.jpg','Nosotros los mas felices tomando foto de nuestro anillo y sabes amor para mi tu eres MI ESPOSO Y ESO JAMAS CAMBIARA AMADO MIO🥰🥰')">
+    <img src="fecha.jpg" alt="Recuerdo 26">
+</div>
+
+ <!--Puedes agregar más fotos aquí -->
+  </div>
+
+<!--botones-->
+<div class="botones">
+    <button onclick="ir('cap6')">Regresar al capitulo anterior</button>
+    <button onclick="ir('musicaPantalla')">Continuar a la musica 🎵</button>
+</div>
+
+  <!--Overlay-->
+  <div id="overlay" onclick="cerrarOverlay()">
+    <span id="cerrar">&times;</span>
+    <img id="fotoGrande" src="" alt="">
+    <p id="descripcionFoto"></p>
+  </div>
+</section>
+
+
+<!-- ===== MÚSICA ===== -->
+<section id="musicaPantalla">
+  <h2>Canciones que te dedico amor de mi vida</h2>
+  <p>Disfruta de estas canciones mi vida</p>
+
+
+  <div class="lista-canciones">
+    <button 
+    onclick="cambiarCancion('assets/music/abrazame-camila.mp3')">Abrazame
+</button>
+
+    <button 
+    onclick="cambiarCancion('assets/music/hombre de mi vida.mp3')">Hombre de mi vida
+</button>
+
+    <button 
+    onclick="cambiarCancion('assets/music/Simplemente.mp3')">Simplemente gracias
+</button>
+
+ <button
+    onclick="cambiarCancion('assets/music/besame.mp3')">Besame
+</button>
+
+
+ <button 
+    onclick="cambiarCancion('assets/music/compartir.mp3')">Compartir
+</button>
+
+
+ <button 
+    onclick="cambiarCancion('assets/music/eres tu.mp3')">Eres tu
+</button>
+
+
+ <button 
+    onclick="cambiarCancion('assets/music/te regalo.mp3')">Te regalo
+</button>
+
+
+
+ <button 
+    onclick="cambiarCancion('assets/music/colgando.mp3')">Colgando en tus manos
+</button>
+
+
+ <button 
+    onclick="cambiarCancion('assets/music/razon.mp3')">Mi razon de ser
+</button>
+
+ <button 
+    onclick="cambiarCancion('assets/music/100.mp3')">Cien años
+</button>
+
+
+ <button 
+    onclick="cambiarCancion('assets/music/corazon.mp3')">Corazon de poeta
+</button>
+
+
+
+
+
+ <button 
+    onclick="cambiarCancion('assets/music/religion.mp3')">Eres mi religion
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/bueno.mp3')">Amor del bueno
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/completo.mp3')">Amor completo
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/quererte.mp3')">Aprender a quererte
+
+</button>
+
+
+<button 
+    onclick="cambiarCancion('assets/music/metiste.mp3')">Te metiste
+
+</button>
+
+
+<button 
+    onclick="cambiarCancion('assets/music/amo.mp3')">El hombre que yo amo
+
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/raiz.mp3')">Hasta la raiz
+
+</button>
+
+
+<button
+onclick="cambiarCancion('assets/music/miel.mp3')">Miel
+</button>
+
+
+<button
+onclick="cambiarCancion('assets/music/veo.mp3')">Veo en ti luz
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/coleccionista.mp3')">Coleccionista de canciones
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/porque.mp3')">Todo porque te amo
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/patadas.mp3')">Patadas de ahogado
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/mi-verdd.mp3')">Mi verdad
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/la-promesa.mp3')">La promesa
+</button>
+
+
+<button 
+    onclick="cambiarCancion('assets/music/sabes.mp3')">Sabes
+</button>
+
+
+<button 
+    onclick="cambiarCancion('assets/music/mirada.mp3')">Tu mirada
+</button>
+
+<button 
+    onclick="cambiarCancion('assets/music/nuestro-sueno.mp3')">Nuestro sueño
+</button>
+
+
+
+
+
+    <!-- Sigue con tus 10 canciones -->
+  </div>
+  
+  <audio id="reproductor" controls>
+    <source id="cancionFuente" 
+    src="assets/music/abrazame-camila.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+<input type="range" id="progreso" value="0">
+
+<div class="controls-extra">
+    <button onclick="siguienteCancion()"> ⏭️Siguiente </button>
+</div>
+
+  <div class="botones">
+    <button onclick="ir('album')">Regresar al álbum</button>
+    <button onclick="irFinal()">Final</button>
+  </div>
+
+</section>
+
+
+
+<!--Pantalla final-->
+
+<section id="final">
+    <h2> Te amo amor mio❤️‍🔥</h2>
+<p>
+    Feliz San Valentin al ser mas hermoso, tierno y especial que existe. <br>
+    Gracias por ser mi razon, mi alegria y el hogar. <br>
+    Te amo hoy, mañana y siempre🤭❤️ 
+</p>
+
+<div class="corazones-final">💕💕💕</div> 
+
+
+<button onclick="ir('inicio')"> Volver al inicio</button>
+</section>
+    <!-- JS externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
